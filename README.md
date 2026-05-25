@@ -1,37 +1,39 @@
-DL- Developing a Recurrent Neural Network Model for Stock Prediction
-AIM
+# DL- Developing a Recurrent Neural Network Model for Stock Prediction
+## AIM
 To develop a Recurrent Neural Network (RNN) model for predicting stock prices using historical closing price data.
 
-Problem Statement and Dataset
+## Problem Statement and Dataset
 Stock price prediction is an important task in financial analysis because investors and organizations rely on accurate forecasts to make better investment decisions. Traditional statistical methods often struggle to capture complex patterns in time-series data such as stock prices.
 
 The objective of this project is to develop a Recurrent Neural Network (RNN) model that can learn patterns from historical stock price data and predict future prices. Using the historical closing prices of Google stock, the model will be trained on a training dataset and evaluated on a separate test dataset.
 
 The system will involve loading the datasets, preprocessing the data, building and training an RNN model, and then predicting stock prices for the test dataset. Finally, the predicted values will be compared with the actual stock prices to evaluate the performance and accuracy of the model.
 
-image
-DESIGN STEPS
-STEP 1:
+<img width="794" height="559" alt="image" src="https://github.com/user-attachments/assets/29780138-6fb9-4cf5-961a-fb5b6a08d132" />
+
+## DESIGN STEPS
+### STEP 1:
 Load and normalize data, create sequences.
 
-STEP 2:
+### STEP 2:
 Convert data to tensors and set up DataLoader.
 
-STEP 3:
+### STEP 3:
 Define the RNN model architecture
 
-STEP 4:
+### STEP 4:
 Summarize, compile with loss and optimizer.
 
-STEP 5:
+### STEP 5:
 Train the model with loss tracking.
 
-STEP 6:
+### STEP 6:
 Predict on test data, plot actual vs. predicted prices.
 
-PROGRAM
-Name: vinodhini k
-Register Number: 212223230245
+## PROGRAM
+### Name: VINODHINI K
+### Register Number: 212223230245
+```
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -139,12 +141,19 @@ plt.legend()
 plt.show()
 print(f'Predicted Price: {predicted_prices[-1]}')
 print(f'Actual Price: {actual_prices[-1]}')
-OUTPUT
-Training Loss Over Epochs Plot
-image image
-True Stock Price, Predicted Stock Price vs time
-image
-Predictions
-image
-RESULT
+```
+
+## OUTPUT
+### Training Loss Over Epochs Plot
+<img width="697" height="492" alt="image" src="https://github.com/user-attachments/assets/01610a77-09c8-43fe-a71b-4b40d9594388" />
+
+<img width="862" height="510" alt="image" src="https://github.com/user-attachments/assets/dd2c91cc-28e9-4347-a0a5-d7e33aab7e5b" />
+
+### True Stock Price, Predicted Stock Price vs time
+<img width="1091" height="681" alt="image" src="https://github.com/user-attachments/assets/9a252dc3-9242-40f9-b996-1207989d9589" />
+
+### Predictions
+<img width="265" height="73" alt="image" src="https://github.com/user-attachments/assets/464d0896-6969-4c37-b077-769935095b88" />
+
+## RESULT
 Thus, a Recurrent Neural Network (RNN) model for predicting stock prices using historical closing price data has been developed successfully.
